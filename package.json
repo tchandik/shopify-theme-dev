@@ -19,6 +19,7 @@
   "homepage": "https://github.com/tchandik/shopify-theme-dev#readme",
   "dependencies": {
     "blob-stream": "^0.1.3",
+    "gulp": "^4.0.2",
     "pdfkit": "^0.13.0"
   }
 }
