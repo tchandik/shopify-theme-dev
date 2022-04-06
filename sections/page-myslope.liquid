@@ -1,0 +1,507 @@
+<header>
+    <h1>MiSlope</h1>
+    <h2 id="sub-header">The One-Piece Stretch Sloper</h2>
+    {% comment %} <img id="example-slope" src="assets/sloper.png"> {% endcomment %}
+</header>
+<div class="overlay"></div>
+<form id="form" novalidate autocomplete="off">
+    <div class="section-container unit-input">
+        <h3>Choose either imperial or metric as your unit of measurement</h3>
+            <div class="input-control cm" >
+                <label for="cm">Centimeters</label>
+                <input type="radio" id="cm" name="units" title="Centimetres">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control in">
+            <label for="cm">Inches</label>
+            <input type="radio" id="in" name="units" title="Inches">
+            <div class="error"></div>
+            </div>
+
+        </div>
+        <div class="section-container">
+            <div class="input-control">
+                <label for="waist">Waist<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="number" id="waist" name="required" title="Waist">
+                <div class="animation-effect"></div>
+                <div class="error"></div>
+          <!-- Start Modal here -->
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>waist</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+            </div>
+
+            <div class="input-control">
+                <label for="ntwCB">Nape To Waist (Center Back)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="number" id="ntwCB" name="required" title="Nape To Waist"/>
+                <div class="animation-effect"></div>
+                <div class="error"></div>
+
+                <!-- Start of Modal -->
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>NTW</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                 <!-- End of Modal -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="input-control">
+                <label for="hps">High Point Shoulder (HPS) To Waist Back<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="number" id="hps" name="required" title="High Point Shoulder (HPS) to Waist Back">
+                <div class="animation-effect"></div>
+                <div class="error"></div>
+                <!-- Start Modal here -->
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>HPS</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+            </div>
+            </div>
+            <div class="section-container">
+            <div class="input-control">
+                <label for="hip">Hip<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="number" id="hip" name="required" title="Hip">
+                <div class="animation-effect"></div>
+                <div class="error"></div>
+                         <!-- Start Modal here -->
+                         <div id="simpleModal" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <span class="closeBtn">&times;</span>
+                                    <h2>Hip</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                               
+                            </div>
+                        </div>
+                      <!-- End Modal  -->
+            </div>
+        
+
+            <div class="input-control">
+                <label for="wtc">Waist To Hip (Center Front)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="number" id="wtcCF" name="required" title="Waist Front To Hip">
+                <div class="animation-effect"></div>
+                <div class="error"></div>
+                         <!-- Start Modal here -->
+                         <div id="simpleModal" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <span class="closeBtn">&times;</span>
+                                    <h2>WTH</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                               
+                            </div>
+                        </div>
+                      <!-- End Modal  -->
+            </div>
+
+            <div class="input-control">
+                <label for="wtw">Waist To Waist<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="number" id="wtw" name="required" title="Waist To Waist"/>
+                <div class="animation-effect"></div>
+                <div class="error"></div>
+                <!-- Start Modal here -->
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Waist To Waist</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+            </div>
+        </div>
+    </div>
+        <div class="section-container">
+            <!-- Radio Check For Crotch Length Method -->
+                <div><h3>Choose which measurement you'd prefer to use for the Crotch Length calculation</h3>
+                <label for="wtf">Waist Front to Front Fork<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                <input type="radio" id="wtf" name="crotchLength" title="Waist Front to Front Fork">
+            <div class="input-control">
+                <input type="number" name="other-wtf" id="wtf-option" />
+                <div class="animation-wtf"></div>
+                <!-- <div class="animation-effect"></div> -->
+                <div class="error"></div>
+                         <!-- Start Modal here -->
+                         <div id="simpleModal" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <span class="closeBtn">&times;</span>
+                                    <h2>WTFF</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                               
+                            </div>
+                        </div>
+                      <!-- End Modal  -->
+            </div>
+    
+        <label for="riseHeight"> Rise Height / Crotch Depth (Waist to seat while sitting)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="radio" id="riseHeight" name="crotchLength" title="Rise Height / Crotch Depth">
+            <div class="input-control">
+            <input type="number" name="other-rise-height" id="rise-height-option" title="Rise Height / Crotch Depth"/>
+            <!-- <div class="animation-effect"></div> -->
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Rise Height</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+    </div>
+</div>
+        <!-- End of Radio Check For Crotch Length Method -->
+
+   <div class="section-container">
+      <h3>Input your personalized Gusset Width or use our AI generated width</h3>
+        
+    <div class="gst-container">
+        <label class="label-input" for="gstWidth">Gusset Width<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="text" id="gstWidth" value="Default">
+        <div class="animation-effect"></div>
+        <!-- Start Modal here -->
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2>Gst Width</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+               
+            </div>
+        </div>
+      <!-- End Modal  -->
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="input-control">
+        <label for="bust">Bust<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="bust" name="required" title="Bust">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Bust</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+
+
+
+    <div class="input-control">
+        <label for="bs">Bust Separation / Bust Span<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="bs" name="required" title="Bust Separation / Bust Span">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Bust Span</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+
+    <div class="input-control">
+        <label for="wtb">Waist To Bust<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="wtb" name="required" title="Waist To Bust">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>WTB</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="input-control">
+        <label for="neck">Neck<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="neck" name="required" title="Neck">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Neck</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+
+    <div class="input-control">
+        <label for="shldr">Shoulder<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="shldr" name="required" title="Shoulder">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Shoulder</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+
+    <div class="input-control">
+        <label for="shldrSlope">Shoulder Slope (Degrees)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="shldrSlope" name="required" title="Shoulder Slope">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Shoulder Slope</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+    <div class="input-control">
+        <label for="armScyeDepth">Arm Scye Depth<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="armScyeDepth" name="required" title="Arm Scye Depth">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Arm Scye Depth</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+
+    <div class="input-control">
+        <label for="addScyeDepth">Scye Depth Ease<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="addScyeDepth" name="" value="0" title="Scye Depth Ease">
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Scye Depth Ease</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div>
+</div>
+<div class="section-container">
+
+    <div class="input-control">
+        <label for="rdcRatio">Reduction Ratio / Negative Ease / Stretch Percentage<i class="fa-solid fa-ruler" id="open-button"></i></label>
+        <input type="number" id="rdcRatio" name="required" title="Negative Ease" placeholder="Example: 12%" >
+        <div class="animation-effect"></div>
+        <div class="error"></div>
+                 <!-- Start Modal here -->
+                 <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Rdc ratio</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+              <!-- End Modal  -->
+    </div> 
+</div>
+
+
+
+<div id="button-container" class="section-container">
+    <input type="submit" value="Submit Measurements" />
+    <div class="downloadBtn"><a style="display: none;" id="pdf">Download Sloper</a></div>
+    
+
+    </div>
+
+</form>
+   
