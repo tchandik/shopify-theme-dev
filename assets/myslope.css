@@ -68,6 +68,7 @@
     color: var(--font-clr);
     background-size: cover;
     font-weight: 300;
+    background-attachment: fixed;
   
   
   
