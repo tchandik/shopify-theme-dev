@@ -31,6 +31,7 @@
   
       <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
       {{ content_for_header }}
+
   
         {%- unless settings.type_body_font.system? -%}
           <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -62,6 +63,7 @@
         <script src="{{ 'background-image.js' | asset_url }}" defer="defer"></script>
         <script src="{{ 'modal.js' | asset_url }}" defer="defer"></script>
         <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
+        {% comment %} <script src="{{ 'nav-menu.js' | asset_url }}" defer="defer"></script> {% endcomment %}
         {{ 'myslope.css' | asset_url | stylesheet_tag }}
        
       
@@ -69,10 +71,10 @@
        
       </head>
     
-      <body class="gradient">
+      <body>
 
  
- 
+        {% section 'header-myslope' %}
         <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
           {{ content_for_layout }}
         </main>
