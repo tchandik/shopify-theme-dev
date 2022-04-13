@@ -1,7 +1,12 @@
 <header id="my-slope-header">
     <h1 id="my-slope-h1">MiSlope</h1>
     <h2 id="sub-header">The One-Piece Stretch Sloper</h2>
-    {% comment %} <img id="example-slope" src="assets/sloper.png"> {% endcomment %}
+
+   <img id="example-slope" src="{{ 'sloper.png' | asset_url }}" width="" height="" loading="lazy">
+  
+
+  
+
 </header>
 <div class= "overlay" id="overlay"></div>
 <form id="form" novalidate autocomplete="off">

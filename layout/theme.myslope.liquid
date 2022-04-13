@@ -49,7 +49,7 @@
         }
         </script>
   
-      {{ 'base-2.css' | asset_url | stylesheet_tag }}
+    
 
       <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
@@ -59,16 +59,20 @@
    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-       
-      
+        <script src="{{ 'background-image.js' | asset_url }}" defer="defer"></script>
+        <script src="{{ 'modal.js' | asset_url }}" defer="defer"></script>
         <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
         {{ 'myslope.css' | asset_url | stylesheet_tag }}
+       
+      
+      
+       
       </head>
     
       <body class="gradient">
 
  
-        {% section 'header' %}
+ 
         <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
           {{ content_for_layout }}
         </main>
