@@ -331,6 +331,10 @@ input[type="number"]:focus {
   outline: 0.5px solid var(--input-focus-clr);
 }
 
+input[type="text"]:focus {
+  outline: 0.5px solid var(--input-focus-clr);
+}
+
 /* Chrome, Safari, Edge, Opera (To take away the arrow icons with number input) */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
