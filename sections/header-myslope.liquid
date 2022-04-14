@@ -49,7 +49,32 @@
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0, 0.17);
       }
       
-      
+        /* Navigation Items */
+
+        .menu {
+        position: relative; 
+        }
+
+        .menu::after {
+        content: ''; 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 1px;
+        background: rgb(255, 255, 255);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 350ms ease-in-out;
+        }
+
+        .menu:hover::after {
+            content: '';
+            cursor: pointer;
+            transform: scaleX(1);
+            transform-origin: right;
+        }
+    
       
       /* scroll */
       
@@ -164,19 +189,14 @@
  
  
 <nav>
+
+    
    <ul class="primary-navigation flex" id="primary-navigation" data-visible="false">
-       <li class="active">
-           <a href="#">home</a>
-       </li>
-       <li class="active">
-        <a href="#">Destination</a>
+    {% for link in linklists.main-menu.links %}
+    <li class="menu">
+        <a href="{{ link.url }}">{{ link.title }}</a>
     </li>
-    <li class="active">
-        <a href="#">Crew</a>
-    </li>
-    <li class="active">
-        <a href="#">Technology</a>
-    </li>
+      {% endfor %}
    </ul>
 </nav>
 </header>
