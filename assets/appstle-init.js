@@ -56,7 +56,7 @@
         "orderStatusManageSubscriptionTitle": "Subscription",
         "orderStatusManageSubscriptionDescription": "Continue to your account to view and manage your subscriptions. Please use the same email address that you used to buy the subscription.",
         "orderStatusManageSubscriptionButtonText": "Manage your subscription",
-        "subscriptionOptionSelectedByDefault" : false,
+        "subscriptionOptionSelectedByDefault" : true,
         "totalPricePerDeliveryText" : "{{prepaidPerDeliveryPrice}}\/delivery",
         "memberOnlySellingPlansJson": {},
         "nonMemberOnlySellingPlansJson": {},
