@@ -5,8 +5,9 @@
 {% section 'page-myslope' %}
 {% else %}
 
-
-<script>window.location.replace( 'https://tnkr-ecommerce.myshopify.com/' );</script>
+{% layout 'theme.liquid' %}
+{{ pages.contact-us.content }}
+<!-- <script>window.location.replace( 'https://tnkr-ecommerce.myshopify.com/' );</script> -->
 
 {% endif %}
 
