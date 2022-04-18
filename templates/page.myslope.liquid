@@ -6,7 +6,9 @@
 {% else %}
 
 
-<script>window.location.replace( 'https://tnkr-ecommerce.myshopify.com/' );</script>
+{% for product in collection.products %} 
+	{{ product.title }} 
+{% endfor %}
 
 {% endif %}
 
