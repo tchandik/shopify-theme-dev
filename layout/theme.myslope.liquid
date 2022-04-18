@@ -80,7 +80,7 @@
       </head>
     
       <body>
-
+{% if customer.tags contains 'active_subscriber' %}
  
         {% section 'header-myslope' %}
         <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -123,6 +123,17 @@
         {%- if settings.predictive_search_enabled -%}
           <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
         {%- endif -%}
+        
+        {% else %}
+
+
+{{ pages.contact-us.content }}
+
+{% endif %}
+
+        
+        
+        
       </body>
     {% endif %}
     </html>
