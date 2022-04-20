@@ -1,0 +1,210 @@
+
+<style>
+
+    .shopify-section {
+        width: 100%;
+        
+    }
+    
+    #shopify-section-header-membership {
+        width: 100%;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background-color: var(--nav-header-clr);
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0, 0.17);
+    
+    }
+    
+          
+          
+            /* Navigation Items */
+    
+            .menu {
+            position: relative; 
+            }
+    
+            .menu::after {
+            content: ''; 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 1px;
+            background: rgb(255, 255, 255);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 350ms ease-in-out;
+            }
+    
+            .menu:hover::after {
+                content: '';
+                cursor: pointer;
+                transform: scaleX(1);
+                transform-origin: right;
+            }
+        
+          
+          /* scroll */
+          
+          .flex  {
+            display: flex;
+            gap: 2rem;
+          }
+          
+          .logo {
+            height: 80px;
+            gap: 2rem;
+            margin: 1em;
+           
+          }
+          
+          .mobile-nav-toggle {
+            display: none;
+          }
+          
+          .primary-header {
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+          
+          }
+          
+          .primary-navigation {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: var(--nav-header-clr-moz);
+            z-index: 3;
+          
+          
+            
+          }
+          
+          @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+            .primary-navigation {
+           background: hsl(0 0% 0% / 0.1);
+            backdrop-filter: blur(1.5rem);
+            }
+          }
+          
+          
+          
+          .primary-navigation a {
+            text-decoration: none;
+          }
+          
+          @media (max-width: 40em) {
+            .primary-navigation {
+              position: fixed;
+              gap: 2em;
+              inset: 0 0 0 30%;
+          
+              flex-direction: column;
+              padding: min(30vh, 10rem) 2em;
+              z-index: 1000;
+          
+              transform: translateX(100%);
+              transition: transform 200ms ease-out;
+           
+            }
+          
+            .primary-navigation[data-visible="true"] {
+              transform: translateX(0%);
+            
+            }
+          
+            .primary-navigation[data-visible="false"] {
+              transform: translateX(100%);
+             
+            }
+          
+          
+            .mobile-nav-toggle {
+              display: block;
+              position: absolute;
+              background: url({{ 'icon-hamburger.svg' | asset_url }}); 
+              width: 2rem;
+              background-repeat: no-repeat;
+              border: 0;
+          
+              aspect-ratio: 1;
+              top: 2rem; 
+              right: 2rem;
+              z-index: 9999999;
+          
+               
+            }
+            .mobile-nav-toggle[aria-expanded='true'] {
+              background-image: url({{ 'icon-close.svg' | asset_url }});
+            }
+          }
+          
+          @media (min-width: 35em) {
+            .primary-navigation {
+              padding-block: 2em;
+              padding-inline: clamp(3rem, 8vw, 10rem);
+            }
+          }
+          
+    </style>
+    
+    <header class="primary-header flex">
+        <div>
+            <img class="logo" src="{{ 'MySlope-Logo-white-V5.png' | asset_url }}" width="" height="" loading="lazy">
+        </div>
+       
+        <button class="mobile-nav-toggle" aria-expanded="false"></button>
+     
+     
+    <nav>
+    
+        
+       <ul class="primary-navigation flex" id="primary-navigation" data-visible="false">
+        {% for link in linklists.membership-menu.links %}
+        <li class="menu">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+          {% endfor %}
+       </ul>
+    </nav>
+    </header>
+    
+    {% javascript %}
+    
+    
+    const primaryNav = document.querySelector('.primary-navigation'); 
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const navLogo = document.querySelector('.logo');
+    
+    const primHeader = document.getElementById('shopify-section-header-myslope');
+    
+    const nav = document.querySelector('ul');
+    
+    
+    const shopHead = document.querySelector('.shopify-section');
+    
+    
+    
+    
+    navToggle.addEventListener('click', () => {
+      const visibility = primaryNav.getAttribute('data-visible'); 
+    
+    if (visibility === 'false') {
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded', true);
+    } else if (visibility === 'true') {
+        primaryNav.setAttribute('data-visible', false); 
+        navToggle.setAttribute('aria-expanded', false);
+    }
+    
+      
+    }); 
+    
+    
+    
+
+    
+    
+    {% endjavascript %}
