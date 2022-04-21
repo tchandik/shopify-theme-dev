@@ -17,7 +17,7 @@
       };
 
 
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0573/4111/6468/t/5/assets/appstle-subscription.js?v=1649969354");
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0573/4111/6468/t/5/assets/appstle-subscription.js?v=1650567481");
 
       window.RS = Window.RS || {};
       RS.Config = {
@@ -84,7 +84,7 @@
         "quickViewModalPollingSelector": "",
         "scriptLoadDelay": "0",
         "formatMoneyOverride": "false",
-        "appstle_app_proxy_path_prefix": "apps/subscriptions",
+        "appstle_app_proxy_path_prefix": "apps\/subscriptions",
         "css": {
             "appstle_subscription_widget": {
                 "margin-top": "" ,
