@@ -138,7 +138,7 @@
                 "background": "transparent",
             },
             "customCSS": "",
-            "customerPortalCss": "",
+            "customerPortalCss": "#accordion > div:nth-child(2){\ndisplay: none;\n}\n#accordion > div:nth-child(3){\ndisplay: none;\n}",
             "priceSelector": "span.price-item.price-item--regular",
             "landingPagePriceSelector": "",
             "quickViewClickSelector": "",
