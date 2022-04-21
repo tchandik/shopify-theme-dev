@@ -45,8 +45,69 @@
 
 }
 
+/* Membership (no-membership) Page Content - you must edit the html and attributes in the shopify page*/
+#membership-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  backdrop-filter: blur(1.9rem);
+  background-color: #1e1e1e36;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0, 0.17);
+}
 
+.membership-info {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  padding: 1em;
+}
 
+#membership-btn {
+  position: relative;
+  background-color: rgb(157, 36, 70);
+  padding: 1em;
+  font-family: inherit;
+  font-weight: 300;
+  color: black;
+  border-radius: 1em;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0, 0.17);
+  z-index: 1;
+  
+}
+
+#membership-btn::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: rgba(5, 5, 5, 0.541);
+border-radius: 1em;
+transition: width 350ms ease-in-out;
+
+-moz-transition: width 350ms ease-in-out;
+-webkit-transition: width 350ms ease-in-out;
+-o-transition: width 350ms ease-in-out;
+
+z-index: -1;
+
+}
+
+#membership-btn:hover:after {
+  width: 100%;
+ 
+}
+
+#membership-btn:hover {
+  color: white;
+}
+
+/* Membership Page Content */
 
  /* CSS For Form Validation */
 .hide {display: none;} /* do not touch */
