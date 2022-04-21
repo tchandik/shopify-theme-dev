@@ -1,3 +1,13 @@
+
 {% layout 'theme.myslope' %}
+{% if customer.tags contains 'active_subscriber' %}
 
 {% section 'page-myslope' %}
+{% else %}
+
+{{ pages.contact-us.content }}
+
+
+
+{% endif %}
+
