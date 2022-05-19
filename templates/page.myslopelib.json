@@ -1,0 +1,11 @@
+{
+    "layout": "theme.myslope",
+    "sections": {
+        "main": {
+            "type": "page-myslopelib"
+
+
+        }        
+    },
+    "order": ["main"]
+  }
