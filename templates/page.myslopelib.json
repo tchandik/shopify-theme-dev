@@ -19,7 +19,7 @@
         "1652985927a3a1c0a1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>hi<\/p>",
             "text_style": "body"
           }
         },
@@ -37,6 +37,7 @@
         "1652985927a3a1c0a1-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/sloper_6f71e0fe-c18f-4a79-9694-559c72d004ee.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
