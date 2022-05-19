@@ -6,9 +6,54 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "165298278951bb6747": {
+      "type": "image-with-text",
+      "blocks": {
+        "1652982789ef81d559-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1652982789ef81d559-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sloper<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1652982789ef81d559-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "MiSlope",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652982789ef81d559-0",
+        "1652982789ef81d559-1",
+        "1652982789ef81d559-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image-11.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "165298278951bb6747"
   ]
 }
