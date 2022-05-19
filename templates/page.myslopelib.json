@@ -1,10 +1,20 @@
 {
+<<<<<<< myslopelibcontdtwo
+    "layout": "theme.myslopelib",
+    "sections": {
+        "main": {
+            "type": "page-myslopelib"
+
+
+        }        
+=======
   "layout": "theme.myslope",
   "sections": {
     "main": {
       "type": "page-myslopelib",
       "settings": {
       }
+>>>>>>> main
     },
     "1652985927955f2632": {
       "type": "image-with-text",
