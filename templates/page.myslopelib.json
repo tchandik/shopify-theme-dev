@@ -1,5 +1,5 @@
 {
-    "layout": "theme.myslope",
+    "layout": "theme.myslopelib",
     "sections": {
         "main": {
             "type": "page-myslopelib"
