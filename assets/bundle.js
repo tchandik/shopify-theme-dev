@@ -282,7 +282,7 @@
    function measurements(arr, conversion) {
    
       
-   
+   console.log(arr);
    
        let ptConversion = conversion;   //To convert size inputs from points to either inches or cm
        
@@ -305,8 +305,8 @@
        let neck = sizeArrCon[15]; 
        let shldr = sizeArrCon[16]; 
        let shldrSlope = arr[17];
-       let armScyeDepth = sizeArrCon[18]; 
-       let rdcRatio = (100-arr[19])/100;
+       let armScyeDepth = sizeArrCon[20]; 
+       let rdcRatio = (100-arr[21])/100;
       
    
        //Validation for gst width - if user selects default, we use 0.314*(hip/8) or user input
