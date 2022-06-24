@@ -1784,11 +1784,11 @@
    
    doc.moveDown(0.5); 
    doc.fontSize(10); 
-   doc.text(`Arm Scye Depth: ${arr[18]} ${measureText}`, { width: widthText, align: 'left' } );
+   doc.text(`Arm Scye Depth: ${arr[20]} ${measureText}`, { width: widthText, align: 'left' } );
    
    doc.moveDown(0.5); 
    doc.fontSize(10); 
-   doc.text(`Reduction Ratio / Negative Ease : ${arr[19]} %`, { width: widthText, align: 'left' } );
+   doc.text(`Reduction Ratio / Negative Ease : ${arr[21]} %`, { width: widthText, align: 'left' } );
    
    
    
