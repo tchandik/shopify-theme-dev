@@ -1,4 +1,127 @@
 
+// Modal Calculator 
+let shldrDrop = document.getElementById('shldrDrop');
+let shoulder = document.getElementById('shldrLength'); 
+let shldrCalcBtn = document.getElementById('shldr-drop-calc-button-container');
+
+shoulder.addEventListener('focus', () => {
+    shoulder.addEventListener('blur', () => {
+    
+        if (shoulder.value === '') {
+            shoulder.value = '0';
+            shoulder.setAttribute('data-font','placeholder-input');
+
+        } if (shoulder.value !== '0' && isNaN(shoulder.value)) {
+            shoulder.value = '0';
+         
+
+        } if (!isNaN(shoulder.value)) {
+            shoulder.setAttribute('data-font','font-value');
+        }
+      
+    })
+})
+
+
+shldrDrop.addEventListener('focus', () => {
+    shldrDrop.addEventListener('blur', () => {
+    
+        if (shldrDrop.value === '') {
+            shldrDrop.value = '0';
+            shldrDrop.setAttribute('data-font','placeholder-input');
+
+        } if (shldrDrop.value !== '0' && isNaN(shldrDrop.value)) {
+            shldrDrop.value = '0';
+           
+
+        } if (!isNaN(shldrDrop.value)) {
+            shldrDrop.setAttribute('data-font','font-value');
+        }
+      
+    })
+})
+
+
+shldrCalcBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    let shldrDropValue =  document.getElementById('shldrDrop').value; 
+    let shoulder = document.getElementById('shldrLength').value; 
+
+    let resultRad = Math.asin(shldrDropValue/shoulder); 
+    let resultDeg = (resultRad*180)/Math.PI
+    let result = resultDeg.toFixed(2);
+
+
+   document.getElementById('result-shldr-Slope').innerText = ` ${result}° `;
+
+});
+
+
+// Text Input Logic 
+let origin = document.getElementById('origin'); 
+let stretch = document.getElementById('stretch');
+
+
+origin.addEventListener('focus', () => {
+    origin.addEventListener('blur', () => {
+    
+        if (origin.value === '') {
+            origin.value = 'Example: 10';
+            origin.setAttribute('data-font','placeholder-input');
+
+        } if (origin.value !== 'Fabric stretches too' && isNaN(origin.value)) {
+            origin.value = 'Example: 10';
+
+        } if (!isNaN(origin.value)) {
+           origin.setAttribute('data-font','font-value');
+        }
+      
+    })
+})
+
+
+
+stretch.addEventListener('focus', () => {
+    stretch.addEventListener('blur', () => {
+    
+        if (stretch.value === '') {
+            stretch.value = 'Example: 13';
+            stretch.setAttribute('data-font','placeholder-input');
+
+        } if (stretch.value !== 'Fabric stretches too' && isNaN(stretch.value)) {
+            stretch.value = 'Example: 13';
+
+        } if (!isNaN(stretch.value)) {
+           stretch.setAttribute('data-font','font-value');
+        }
+      
+    })
+})
+
+
+
+
+// End of Text Input Logic
+
+
+let rdcCalcBtn = document.getElementById('rdc-calc-button-container');
+
+rdcCalcBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+   let origin = document.getElementById('origin').value; 
+   let stretch = document.getElementById('stretch').value;
+
+   let result = (100-((origin/stretch)*100));
+   let resultRound = result.toFixed(2);
+
+ 
+
+   document.getElementById('result').innerText = ` ${resultRound} %`;
+
+});
+
+// End of Modal Calculator 
+
 //Get Modal Node List 
 let modalNode = document.getElementsByClassName('modal'); 
 //Open Modal 
