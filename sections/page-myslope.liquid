@@ -11,508 +11,725 @@
 
 
 
-<div class= "overlay" id="overlay"></div>
-<form id="form" novalidate autocomplete="off">
-    <div class="section-container unit-input">
-        <h3>Choose either imperial or metric as your unit of measurement</h3>
-            <div class="input-control cm" >
-                <label for="cm">Centimeters</label>
-                <input type="radio" id="cm" name="units" title="Centimetres">
-                <div class="error"></div>
-            </div>
-
-            <div class="input-control in">
-            <label for="cm">Inches</label>
-            <input type="radio" id="in" name="units" title="Inches">
-            <div class="error"></div>
-            </div>
-
-        </div>
-        <div class="section-container">
-            <div class="input-control">
-                <label for="waist">Waist<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="number" id="waist" name="required" title="Waist">
-                <div class="animation-effect"></div>
-                <div class="error"></div>
-          <!-- Start Modal here -->
-                <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>waist</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
+    <div class="overlay"></div>
+    <form id="form" novalidate autocomplete="off">
+        <div class="section-container unit-input">
+            <h3>Choose either imperial or metric as your unit of measurement</h3>
+                <div class="input-control cm" >
+                    <label for="cm">Centimeters</label>
+                    <input type="radio" id="cm" name="units" title="Centimetres">
+                    <div class="error"></div>
                 </div>
-              <!-- End Modal  -->
-            </div>
 
-            <div class="input-control">
-                <label for="ntwCB">Nape To Waist (Center Back)<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="number" id="ntwCB" name="required" title="Nape To Waist"/>
-                <div class="animation-effect"></div>
+                <div class="input-control in">
+                <label for="cm">Inches</label>
+                <input type="radio" id="in" name="units" title="Inches">
                 <div class="error"></div>
-
-                <!-- Start of Modal -->
-                <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>NTW</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                 <!-- End of Modal -->
-                    </div>
                 </div>
 
             </div>
 
-            <div class="input-control">
-                <label for="hps">High Point Shoulder (HPS) To Waist Back<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="number" id="hps" name="required" title="High Point Shoulder (HPS) to Waist Back">
-                <div class="animation-effect"></div>
-                <div class="error"></div>
-                <!-- Start Modal here -->
-                <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>HPS</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-              <!-- End Modal  -->
-            </div>
-            </div>
             <div class="section-container">
-            <div class="input-control">
-                <label for="hip">Hip<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="number" id="hip" name="required" title="Hip">
-                <div class="animation-effect"></div>
-                <div class="error"></div>
-                         <!-- Start Modal here -->
-                         <div id="simpleModal" class="modal">
-                            <div class="modal-content">
+                <div class="input-control">
+                    <label for="waist">Waist<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="number" id="waist" name="required" title="Waist">
+                    <div class="animation-effect"></div>
+                    <div class="error"></div>
+              <!-- Start Modal here -->
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
 
-                                <div class="modal-header">
-                                    <span class="closeBtn">&times;</span>
-                                    <h2>Hip</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
-                               
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Waist Measurement</h2>
                             </div>
-                        </div>
-                      <!-- End Modal  -->
-            </div>
-        
+                            <div class="modal-body">
+                                <!-- Modal Content -->
+                                &nbsp;
+                                <p id="p0">To take your waist measurement, stand up straight, exhale. Bend to one side, place your index finger where your waist creases. Return to a straight standing position with your finger remaining as a guide. Wrap a piece of string around the smallest part of your natural waist, tie the string moderately tight. The string will serve as a landmark for the vertical measurements to be taken subsequently. Next, to take the waist circumference measurement, wrap the tape measure around the smallest part of your natural waist. The tape should run parallel around the body and wrap just above your belly button. Ensure the tape measure remains <b>horizontal</b> and <b>parallel</b> to the floor.
+                                    <br> &nbsp;</p>
+                                    <p id="p0">Along with the string indicating the waist landmark, you will mark both Center Front and Center Back at Waist level with your washable/non-toxic marker. The belly button can be used as a guide to identify Center Front and the spine can be used as a guide to identify Center Back. 
+                                        </p> &nbsp;
+                                        
+                                        <!-- End Modal Content -->   
 
-            <div class="input-control">
-                <label for="wtc">Waist To Hip (Center Front)<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="number" id="wtcCF" name="required" title="Waist Front To Hip">
-                <div class="animation-effect"></div>
-                <div class="error"></div>
-                         <!-- Start Modal here -->
-                         <div id="simpleModal" class="modal">
-                            <div class="modal-content">
-
-                                <div class="modal-header">
-                                    <span class="closeBtn">&times;</span>
-                                    <h2>WTH</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
-                               
                             </div>
-                        </div>
-                      <!-- End Modal  -->
-            </div>
-
-            <div class="input-control">
-                <label for="wtw">Waist To Waist<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="number" id="wtw" name="required" title="Waist To Waist"/>
-                <div class="animation-effect"></div>
-                <div class="error"></div>
-                <!-- Start Modal here -->
-                <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Waist To Waist</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-              <!-- End Modal  -->
-            </div>
-        </div>
-    </div>
-        <div class="section-container">
-            <!-- Radio Check For Crotch Length Method -->
-                <div><h3>Choose which measurement you'd prefer to use for the Crotch Length calculation</h3>
-                <label for="wtf">Waist Front to Front Fork<i class="fa-solid fa-ruler" id="open-button"></i></label>
-                <input type="radio" id="wtf" name="crotchLength" title="Waist Front to Front Fork">
-            <div class="input-control">
-                <input type="number" name="other-wtf" id="wtf-option" />
-                <div class="animation-wtf"></div>
-                <!-- <div class="animation-effect"></div> -->
-                <div class="error"></div>
-                         <!-- Start Modal here -->
-                         <div id="simpleModal" class="modal">
-                            <div class="modal-content">
-
-                                <div class="modal-header">
-                                    <span class="closeBtn">&times;</span>
-                                    <h2>WTFF</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
-                               
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope</h3>
                             </div>
+                           
                         </div>
-                      <!-- End Modal  -->
-            </div>
-    
-        <label for="riseHeight"> Rise Height / Crotch Depth (Waist to seat while sitting)<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="radio" id="riseHeight" name="crotchLength" title="Rise Height / Crotch Depth">
-            <div class="input-control">
-            <input type="number" name="other-rise-height" id="rise-height-option" title="Rise Height / Crotch Depth"/>
-            <!-- <div class="animation-effect"></div> -->
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Rise Height</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
                     </div>
+                  <!-- End Modal  -->
                 </div>
-              <!-- End Modal  -->
-    </div>
-    </div>
-</div>
-        <!-- End of Radio Check For Crotch Length Method -->
 
-   <div class="section-container">
-      <h3>Input your personalized Gusset Width or use our AI generated width</h3>
-        
-    <div class="gst-container">
-        <label class="label-input" for="gstWidth">Gusset Width<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="text" id="gstWidth" value="Default" onfocus="this.value =''">
-        <div class="animation-effect"></div>
-        <!-- Start Modal here -->
-        <div id="simpleModal" class="modal">
-            <div class="modal-content">
+                <div class="input-control">
+                    <label for="ntwCB">Nape To Waist (Center Back)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="number" id="ntwCB" name="required" title="Nape To Waist"/>
+                    <div class="animation-effect"></div>
+                    <div class="error"></div>
 
-                <div class="modal-header">
-                    <span class="closeBtn">&times;</span>
-                    <h2>Gst Width</h2>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div>
-               
-            </div>
-        </div>
-      <!-- End Modal  -->
-    </div>
-</div>
+                    <!-- Start of Modal -->
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
 
-<div class="section-container">
-    <div class="input-control">
-        <label for="bust">Bust<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="bust" name="required" title="Bust">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Nape To Waist</h2>
+                            </div>
+                            <div class="modal-body"> 
+                                 <!-- Modal Content -->
+                                &nbsp;
+                                <p id="p0">Ensure that the waist landmark is identified with string or marker. The Nape to Waist measurement will be taken from the <b>Center Back </b> of the model. 
+                                    <br> &nbsp;</p>
+                                    <p id="p0">To identify and mark the Nape, tilt your model's head forward to reveal a bone that will protrude from the back of the neck. Mark the most noticeable protruding bone while your model’s head is tilted forward. When your model un-tilts their head, the mark made on the leotard/skin will move down to its natural position. Measure from the marked point straight down to the waist. </p> &nbsp;
+                                    <p id="p0">Ensure the tape measure runs parallel to the spine and remains perpendicular to the waistline. &nbsp;</p>
 
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Bust</h2>
+                                        <!-- End Modal Content -->   
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                     <!-- End of Modal -->
                         </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
                     </div>
+
                 </div>
-              <!-- End Modal  -->
-    </div>
 
+                <div class="input-control">
+                    <label for="hps">High Point Shoulder (HPS) To Waist Back<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="number" id="hps" name="required" title="High Point Shoulder (HPS) to Waist Back">
+                    <div class="animation-effect"></div>
+                    <div class="error"></div>
+                    <!-- Start Modal here -->
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
 
-    <div class="input-control">
-        <label for="bust-radius">Bust Radius<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>High Point Shoulder (HPS) To Waist</h2>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Modal Content -->
+                                &nbsp;
+                                <p id="p0">
+                                    The High Point Shoulder (HPS) measurement will be taken at <b>Center Back</b>. </p> &nbsp; <p id="p0">The HPS is the highest point of the shoulder at the intersection point of the neck, where the shoulder seam connects with the neck. Once you have marked the High Point Shoulder, run the tape measure from the HPS down to the waistline. Ensure that the tape measure runs parallel to the Center Back.                                    
+                                    <br> &nbsp;</p>
+                                    <p id="p0">Ensure the tape measure runs parallel to Center Back and connects with the waistline at perpendicularly. </p> &nbsp;
+                                    <p id="p0"> If you were to place a marble in the HPS it would not move. 
+                                        &nbsp;</p>
 
-        <input type="text" id="bustRadius" value="Optional" onfocus="this.value =''">
-
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Bust Radius</h2>
+                                        <!-- End Modal Content -->   
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
                         </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
                     </div>
+                  <!-- End Modal  -->
                 </div>
-              <!-- End Modal  -->
-    </div>
-
-    <div class="input-control">
-        <label for="bs">Bust Separation / Bust Span<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="bs" name="required" title="Bust Separation / Bust Span">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Bust Span</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
                 </div>
-              <!-- End Modal  -->
-    </div>
+                <div class="section-container">
+                <div class="input-control">
+                    <label for="hip">Hip<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="number" id="hip" name="required" title="Hip">
+                    <div class="animation-effect"></div>
+                    <div class="error"></div>
+                             <!-- Start Modal here -->
+                             <div id="simpleModal" class="modal">
+                                <div class="modal-content">
 
-    <div class="input-control">
-        <label for="wtb">Waist To Bust<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="wtb" name="required" title="Waist To Bust">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="closeBtn">&times;</span>
+                                        <h2>Hip Girth</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Modal Content -->
+                                &nbsp;
+                                <p id="p0">The hip circumference measurement is a <b>horizontal</b> measurement at the fullest part of the lower torso at hip height. 
+                                </p> &nbsp; <p id="p0">To take the hip circumference measurement, have your model stand with their feet touching together. If your model is standing with an open stance, this will result in inaccuracies of the hip measurement.  Wrap the tape measure around the fullest part of your model’s buttocks and thigh. Ensure that the tape measure remains parallel with the floor around the total hip, front, side and back.<br> &nbsp;</p>
+                                    <p id="p0">You want to ensure you are wrapping the tape around. Bring the tape measure together at the front and make sure the tape remains parallel/straight to the ground, across the front side and back.</p> &nbsp;
+                                    <p id="p0"> Mark the hip landmark at the center front using a non-toxic/washable marker. A pin may also be used, if you want to avoid marking the garment.&nbsp;</p>
 
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>WTB</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
+                                        <!-- End Modal Content -->   
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>&copy; MiSlope Measurements</h3>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                          <!-- End Modal  -->
                 </div>
-              <!-- End Modal  -->
-    </div>
-</div>
+            
 
-<div class="section-container">
-    <div class="input-control">
-        <label for="neck">Neck<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="neck" name="required" title="Neck">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
+                <div class="input-control">
+                    <label for="wtc">Waist To Hip (Center Front)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="number" id="wtcCF" name="required" title="Waist Front To Hip">
+                    <div class="animation-effect"></div>
+                    <div class="error"></div>
+                             <!-- Start Modal here -->
+                             <div id="simpleModal" class="modal">
+                                <div class="modal-content">
 
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Neck</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
+                                    <div class="modal-header">
+                                        <span class="closeBtn">&times;</span>
+                                        <h2>Waist to Hip (Center Front)</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                          <!-- Modal Content -->
+                                &nbsp;
+                                <p id="p0">After taking the waist and hip circumference measurements, both landmarks should have already been identified. </p> &nbsp; 
+                                <p id="p0">The Waist to Hip measurement will be taken at Center Front, measuring from Center Front at waist level, down center front, to the Center Front hip mark.
+                                    <br> &nbsp;</p>
+                                    <p id="p0">Ensure that the tape measure remains parallel to Center Front and intersects both the Waist and Hip line perpendicularly. </p> &nbsp;
+                                   
+
+                                        <!-- End Modal Content -->   
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>&copy; MiSlope Measurements</h3>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                          <!-- End Modal  -->
                 </div>
-              <!-- End Modal  -->
-    </div>
 
-    <div class="input-control">
-        <label for="shldr">Shoulder<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="shldr" name="required" title="Shoulder">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
+                <div class="input-control">
+                    <label for="wtw">Waist To Waist<i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="number" id="wtw" name="required" title="Waist To Waist"/>
+                    <div class="animation-effect"></div>
+                    <div class="error"></div>
+                    <!-- Start Modal here -->
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
 
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Shoulder</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-              <!-- End Modal  -->
-    </div>
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Waist To Waist</h2>
+                            </div>
+                            <div class="modal-body">
+                                 <!-- Modal Content -->
+                                 &nbsp;
+                                 <p id="p0">The Waist to Waist measurement will be taken from <b>Center Front</b> through the legs to <b>Center Back </b> at the CF and CB waist level landmarks indicated earlier.  </p> &nbsp; 
+                                 <p id="p0">To take the Waist to Waist measurement, take the tape measure from CF at waist level, through the legs and crotch to meet at the CB mark at waist level. 
 
-    <div class="input-control">
-        <label for="shldrSlope">Shoulder Slope (Degrees)<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="shldrSlope" name="required" title="Shoulder Slope">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Shoulder Slope</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-              <!-- End Modal  -->
-    </div>
-    <div class="input-control">
-        <label for="armScyeDepth">Arm Scye Depth<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="armScyeDepth" name="required" title="Arm Scye Depth">
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Arm Scye Depth</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-              <!-- End Modal  -->
-    </div>
-
-
-</div>
-<div class="section-container">
-
-    <div class="input-control">
-        <label for="rdcRatio"> Horizontal Negative Ease / Stretch Percentage<i class="fa-solid fa-ruler" id="open-button"></i></label>
-        <input type="number" id="rdcRatio" name="required" title="Negative Ease" placeholder="Example: 12%" >
-        <div class="animation-effect"></div>
-        <div class="error"></div>
-                 <!-- Start Modal here -->
-                 <div id="simpleModal" class="modal">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <span class="closeBtn">&times;</span>
-                            <h2>Rdc ratio</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit, reprehenderit corporis possimus ipsa, eum quaerat, numquam alias dignissimos odit sunt nihil rem autem ipsam id? Eius dolorum earum corporis.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-              <!-- End Modal  -->
-    </div> 
-</div>
-
-
-<div class="downloadBtn"><a style="display: none;" id="pdf">Download Sloper</a></div>
-<div id="button-container" class="section-container">
-    <input type="submit" value="Submit Measurements" />
+                                     <br> &nbsp;</p>
+                                     <p id="p0">Ensure the tape measure is comfortable around the crotch (not too tight or loose). Also ensure that the tape measure does not fall between the cheeks of your model since this will result in an inaccurate measurement.  </p> &nbsp;
+                                    
  
+                                         <!-- End Modal Content -->   
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+                </div>
+            </div>
+        </div>
+            <div class="section-container">
+                <!-- Radio Check For Crotch Length Method -->
+                    <div><h3>Choose which measurement you'd prefer to use for the Crotch Length calculation </h3>
+                    <label for="wtf">Waist CF to Front Fork (Recommended) <i class="fa-solid fa-ruler" id="open-button"></i></label>
+                    <input type="radio" id="wtf" name="crotchLength" title="Waist Front to Front Fork">
+                <div class="input-control">
+                    <input type="number" name="other-wtf" id="wtf-option" />
+                    <div class="animation-wtf"></div>
+                    <!-- <div class="animation-effect"></div> -->
+                    <div class="error"></div>
+                             <!-- Start Modal here -->
+                             <div id="simpleModal" class="modal">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <span class="closeBtn">&times;</span>
+                                        <h2>Waist Front To Front Fork (Recommended)</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                       <!-- Modal Content -->
+                                 &nbsp;
+                                 <p id="p0">The Waist to Front Fork measurement is taken similarly to the Waist to Waist measurement with the exception of stopping midway through the crotch curve. Take the tape measure from CF at waist level, through the legs and pressing the tape measure towards the front of your perineum. Pinch the tape at the spot in which was indicated to be forward of the perineum and remove the tape from between the legs, record the measurement where the tape is pinched.  </p> &nbsp; 
+                                 <p id="p0">As an additional visualization to identify where the Front Crotch Curve should end, think where the forked seam of a pair of fitted jeans would sit or the middle of your inseam if you were to divide your inner leg in half. 
+
+
+                                     <br> &nbsp;</p>
+                                     <p id="p0">The Waist to Front Fork is the measurement that will determine the proportion of the Waist to Waist measurement to be allocated for the front panel and thus the back panel. By measuring from Center Front Waist to the front of the perineum, we are measuring the length of the front crotch curve. Since the body typically carries more girth in the back than the front, there will be a greater proportion of the Waist to Waist that must be allocated to the back. However, the allocation of the Waist to Waist to front and back is specific to each individual. 
+                                    </p> &nbsp;
+                                    <p id="p0">If the Waist to Waist measurement is not properly proportioned between the front and back, fit issues will likely arise. Fit issues that occur due to an inaccurately proportioned Crotch Curve is typically mistakenly identified as “Pelvic Tilt”. 
+                                    </p> &nbsp;
+                                    
+ 
+                                         <!-- End Modal Content -->   
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>&copy; MiSlope Measurements</h3>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                          <!-- End Modal  -->
+                </div>
+        
+            <label for="riseHeight"> Rise Height / Crotch Depth<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="radio" id="riseHeight" name="crotchLength" title="Rise Height / Crotch Depth">
+                <div class="input-control">
+                <input type="number" name="other-rise-height" id="rise-height-option" title="Rise Height / Crotch Depth"/>
+                <!-- <div class="animation-effect"></div> -->
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Rise Height</h2>
+                            </div>
+                            <div class="modal-body">
+                                <h2><u>Crotch Depth (Standing Up Method)</u></h2>&nbsp;
+                                    
+
+                                <p id="p0">To measure Crotch Depth using the stand up method, you will be using the waist landmark at Center Front and will have to identify the base of the crotch by either eyeballing or placing a ruler between the thighs as a guide. Similarly to measuring the Waist to Hip, you will measure from the Center Front at Waist level and move vertically down towards the base of the crotch.  </p> &nbsp;
+                                
+                                
+                                <p id="p0">Ensure the tape remains parallel to Center Front and intersects the waist line perpendicularly. </p> &nbsp;
+                                
+                                
+                                <h2><u>Sitting Down Method (Body Rise) </u></h2>&nbsp;
+                                
+                                <p id="p0">To take the body rise, you will be using the CB landmark point at waist level. To start, you will need to have your model sit on a flat stool/bench (the back of the seat needs to be exposed) with their knees together and back straight. Locate your CB landmark point at waist level and measure down from the waist until the point where the model touches the stool/chair.  </p> &nbsp;
+                                
+                                <p id="p0">Ensure the tape measure remains parallel to the CB line and meets the stool perpendicularly. </p> &nbsp;
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+        </div>
+    </div>
+            <!-- End of Radio Check For Crotch Length Method -->
+    
+       <div class="section-container">
+          <h3>Input your personalized Gusset Width or use our AI generated width</h3>
+            
+        <div class="gst-container">
+            <label class="label-input" for="gstWidth">Gusset Width<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="text" id="gstWidth" value="Default" onfocus="this.value =''">
+            <div class="animation-effect"></div>
+            <!-- Start Modal here -->
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <span class="closeBtn">&times;</span>
+                        <h2>Gusset Width</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p id="p0">To take the Gusset Width measurement, ask your model to stand with their legs slightly smaller than shoulder width. Ask your model to place their fingers towards the front of the perineum. Use as many fingers that will comfortably span the width between the legs. Take the width measurement of the group of fingers. </p> &nbsp;
+
+
+                        <p id="p0">Alternatively, if you or your model would prefer not to use fingers, you may cut different width pieces of cardstock and determine which width fits the most comfortably between the legs.  </p> &nbsp;
+                    </div>
+                    <div class="modal-footer">
+                        <h3>&copy; MiSlope Measurements</h3>
+                    </div>
+                   
+                </div>
+            </div>
+          <!-- End Modal  -->
+        </div>
+    </div>
+    
+    <div class="section-container">
+        <div class="input-control">
+            <label for="bust">Bust<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="bust" name="required" title="Bust">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Bust</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">To take the <b>Bust circumference</b> measurement, identify and mark the Bust Apex points. The Bust Apex is the highest point on the bust, in most cases it will be the nipple. Take the tape measure and measure horizontally around the fullest part of the bust across the bust apex points, under the arms and include the lower portion of the shoulder blades. Ensure the tape measure remains parallel to the floor across the bust apex, side seam and back.  </p> &nbsp;
+
+<p id="p0">While measuring Bust circumference, with the tape measure wrapped around the circumference of the bust, crossing the two Bust Apex points, mark the Bust Apex height at Center Front while using the tape measure as a guide.  </p> &nbsp;
+
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+    
+        <div class="input-control">
+            <label for="bust-radius">Bust Radius<i class="fa-solid fa-ruler" id="open-button"></i></label>
+
+            <input type="text" id="bustRadius" value="Optional" onfocus="this.value =''">
+
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Bust Radius</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">To measure the Bust Radius you will utilize the Bust Apex landmark points as a reference. Remember, the Bust Apex is the highest point on the bust, in most cases it will be the nipple. Take the tape and measure vertically down from the Bust Apex, over the bust mound and end under the bust mound. Essentially, you are cupping and measuring the bottom half of the bust mound.</p> &nbsp;
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+
+    
+        <div class="input-control">
+            <label for="bs">Bust Separation / Bust Span<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="bs" name="required" title="Bust Separation / Bust Span">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Bust Span</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">The Bust Span is the horizontal distance between the two marked Bust Apex points. Remember, the Bust Apex is the highest point on the bust, in most cases it will be the nipple. To take the horizontal Bust Span measurement, run the tape measure horizontally between the two Bust Apex points. The tape measure must form a straight line between both points and should run parallel to the floor. This measurement should be taken with arms down.</p> &nbsp;
+
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+    
+        <div class="input-control">
+            <label for="wtb">Waist To Bust<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="wtb" name="required" title="Waist To Bust">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Waist to Bust</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">When taking the Bust Measurement, the Bust Apex height at <b>Center Front</b> should have been marked (refer back to the Bust measurement for instructions on marking Bust Apex height).  Remember, the Bust Apex is the highest point on the bust, in most cases it will be the nipple. </p> &nbsp;
+
+<p id="p0">Using the Center Front marked point at Bust Apex height, measure the vertical distance between the Bust Apex and the Center Front point at Waist level. This measurement should be taken with arms down.</p> &nbsp;
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="input-control">
+            <label for="neck">Neck<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="neck" name="required" title="Neck">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Neck</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">The neck circumference is the measurement around the neck where the collar of a shirt or bow tie would sit. The neck measurement will be taken over the nape of the neck at the back and over the top of the collarbone and front neck point at the front. To take the neck measurement, wrap the tape measure comfortably around the neck, as if you were putting on a tie.</p> &nbsp;
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+    
+        <div class="input-control">
+            <label for="shldr">Shoulder<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="shldr" name="required" title="Shoulder">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Shoulder</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">To take the shoulder measurement, you will need both the HPS and Shoulder Point landmarks. Since you will have already marked the HPS, you must next identify and mark the shoulder point. </p> &nbsp;
+
+                                <p id="p0">When identifying the Shoulder point, position your finger on the collar bone and move your finger along the bone until you feel the tip of the bone. As a way to ensure you’ve identified the shoulder point, you may ask your model to rotate her shoulder in tiny circles while keeping your finger on top of the shoulder point. If you feel the bone moving beneath your finger, you have correctly identified the shoulder point, mark this point. </p> &nbsp;
+                                
+                                <p id="p0">To take the Shoulder measurement, position your tape measure at the HPS and measure across to the newly marked Shoulder point. </p> &nbsp;
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+    
+        <div class="input-control">
+            <label for="shldrSlope">Shoulder Slope (Degrees)<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="shldrSlope" name="required" title="Shoulder Slope">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Shoulder Slope</h2>
+                            </div>
+                            <div class="modal-body">
+                         
+
+
+                                <p id="p0">The Shoulder Slope is the measurement of degrees at which the shoulder is sloped downwards with the HPS as the origin point. There are three methods to determine the shoulder slope measurement, the selfie method, the goniometer method or the ruler method. </p> &nbsp;
+
+                                <h2><u>Selfie Method (Most accurate) </u></h2> &nbsp;
+                                
+                                <p id="p0">This method will be the easiest and most accurate way to measure shoulder slope. Have your model stand straight with her arms down. Stand directly in front and parallel to your model. Take a picture of your model, does not have to be their full height but must have their shoulders in the shot. Open your model’s picture in your CAD drafting program. You will now need to draft a horizontal line that extends from the HPS to the shoulder point. The line must extend 180 degrees or 0 Degrees from the HPS. Rotate the line, using the shoulder point as the origin, and continue the rotation until the end of line reaches the shoulder point. Record the angle of rotation. </p> &nbsp;
+                                
+                                <h2><u>The Ruler Method (Shoulder Drop) </u></h2>&nbsp;
+                                                                <!-- Calculator -->
+             <div class="calculator-container">     
+                <label for="shldrLength">Shoulder Length (HPS to Shoulder Point) (CM/Inch)</label>
+                <input type="text" id="shldrLength" value="0" onfocus="this.value = ''" data-font="placeholder-input">
+           
+                <label for="shldrDrop">Shoulder Drop (CM/Inch)</label>
+                 <input type="text" id="shldrDrop" value="0" onfocus="this.value = ''" data-font="placeholder-input">
+            
+                </div>
+                <p id="result-shldr-Slope"></p>
+                <div id="shldr-drop-calc-button-container">
+                   <p id="ease-faux-btn">Get Shoulder Slope</p>
+                    </div>
+                    <!-- Calculator -->
+                                
+                                <p id="p0">Position a ruler horizontally at the HPS level and measure the vertical distance at the shoulder point. </p> &nbsp;
+                                
+                                <p id="p0">To take the shoulder slope using the ruler method, you will be measuring the shoulder drop. The shoulder drop is the vertical distance between HPS level and shoulder point level. It is best to use two rulers when measuring shoulder drop. First, you must place one end of the ruler at  HPS level and extend the ruler horizontally towards the shoulder point, ensuring the ruler remains perpendicular to the HPS (imagine a straight line extending outwards from the HPS point). Next, you will take the second ruler and measure vertically from the shoulder point to where the two rulers intersect. Once you have that measurement, input the shoulder drop measurement into the calculator to determine shoulder slope.</p> &nbsp;
+           
+    
+
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
+        <div class="input-control">
+            <label for="armScyeDepth">Arm Scye Depth<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="armScyeDepth" name="required" title="Arm Scye Depth">
+            <div class="animation-effect"></div>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Armscye Depth</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p id="p0">The Armscye depth measurement is the basis for what will form the armhole. Given that arms move, we want to measure the armscye with a bit of ease to account for range of motion. </p> &nbsp;
+
+                                <p id="p0">To take the Armscye depth, you will have your model use two or three fingers (the more depth we add, the larger the armhole will become) and place them under their armpit. From the back, when your model turns around, you will need to see the tips of their fingertips. From the tip of the bottom finger, while using your soft tape measure as a guide, extend the tape measure horizontally from the bottom finger to Center Back. The tape measure must remain parallel to the floor. At the point where the tape measure intersects the Center Back line, mark a point. Once you’ve marked the armscye depth point at Center Back, you will take the vertical measurement between the Nape landmark point and the newly marked Armscye point. </p> &nbsp;
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div>
     
 
     </div>
+    <div class="section-container">
+    
+        <div class="input-control">
+            <label for="rdcRatio"> Horizontal Negative Ease / Stretch Percentage<i class="fa-solid fa-ruler" id="open-button"></i></label>
+            <input type="number" id="rdcRatio" name="required" title="Negative Ease" placeholder="Example: 12%" >
+            <div class="animation-effect"></div>
+            <p id="errorMsg" data-error="hide">Please enter an amount 0% - 40%</p>
+            <div class="error"></div>
+                     <!-- Start Modal here -->
+                     <div id="simpleModal" class="modal">
+                        <div class="modal-content">
 
-</form>
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                                <h2>Stretch Percentage</h2>
+                            </div>
+                            <div class="modal-body">
+
+                                <!-- Calculator -->
+
+                                <h2>Horizontal Negative Ease / Stretch % Calculator</h2>                       
+                                    <div class="calculator-container">
+                                    
+
+                                        <label for="Origin">Test Fabric Length at Rest (CM/Inch)</label>
+                                        <input type="text" id="origin" value="Example: 10" onfocus="this.value = ''" data-font="placeholder-input">
+
+
+                                        <label for="Stretch">Test Fabric Length When Stretched (CM/Inch)</label>
+                                        <input type="text" id="stretch" value="Example: 13" onfocus="this.value = ''" data-font="placeholder-input" >
+                                
+
+                                        <p id="result"></p>
+                                    
+                                        <div id="rdc-calc-button-container">
+                                            <p id="ease-faux-btn">Calculate Horizontal Negative Ease / Stretch %</p>
+                                        </div>
+                                    
+                                    </div>
+                                   
+                                    <!-- End of Calculator -->
+
+                                <p id="p1"><u><b>How to determine the stretch/reduction ratio of your fabric</b></u></p> &nbsp;
+                                
+                                <p id="p0">This explanation will focus on knits since we are designing a knit sloper. All fabrics consist of two elements: Fiber Content (Natural/Synthetic) and Construction (Knit). There are two categories of Knits: Weft Knits and Warp Knits. </p> &nbsp;
+                                
+                                <p id="p1"><u>Step One: Determine if your knit is a <b>weft</b> knit or a <b>warp</b> knit. </p></u> &nbsp;
+                                
+                                
+                                <p id="p0"><b>Weft Knits</b> examples: Jersey, Matte Jersey, Pointelle, Sweater knits, interlock, rib knit, fleece, knitted terry, velour and sweater knits. </p> &nbsp;
+                                
+                                <p id="p0"><b>Warp Knits </b> examples: Interlinings, linings, athletic wear, swimwear, underwear, lingerie and meshes.  </p> &nbsp;
+                                
+                                <p id="p1"><u>Step Two: Determine the Direction of Greatest Stretch</p></u> &nbsp;
+                                
+                                <p id="p0">When drafting with knits, we want to wrap the body using the greatest stretch direction of the fabric. You must locate the selvidge of your fabric and determine the direction of greatest stretch relative to the selvidge.</p></u> &nbsp; 
+                                
+                                <p id="p0">
+                                <ol>
+                                
+                                <li>For a Weft Knit, the direction of greatest stretch will be widthwise and perpendicular to the selvidge (crossgrain). </li>
+                                <li>For a Warp Knit, the direction of greatest stretch will be lengthwise and parallel to the selvidge (grainline)</li>
+                                </ol>
+                                 </p> &nbsp;
+                                
+                                <p id="p1"><u>Step Three: Determine Stretch Ratio Using Hand Elongation</p></u> &nbsp;
+                                
+                                
+                                <p id="p1"><u><b>Determining the Stretch Ratio for a Warp Knit</b></p></u> &nbsp;
+                                
+                                <p id="p0">
+                                <ol>
+                                
+                                <li> Locate the grainline (warp) of your fabric. The grain runs parallel to the selvedge of your fabric. </li>
+                                <li>Locate the crosswise grain (weft) of your fabric. The crosswise grain runs perpendicular to the selvedge of your fabric. </li>
+                                <li>Measure 5cm perpendicular to the selvidge of your fabric, along the weft/crossgrain of your fabric. </li>
+                                <li>Measure 20cm parallel to the selvidge of your fabric, along the warp/grain. </li>
+                                <li>Cut out the 20cm x 5cm rectangular strip of fabric according to steps 3 and 4. </li>
+                                <li>Place your first pin 5cm in along the 20cm side of the rectangle and place your second pin 10cm from the first pin (the distance between both pins should be 10cm).</li>
+                                <li>Place a ruler on your cutting table as a guide when measuring your fabric.</li>
+                                <li>Stretch the fabric comfortably. You want to avoid stretching your fabric to the max, stretch your fabric a comfortable amount for wearability. </li>
+                                <li>Measure the distance between the pins when the fabric is stretched (For example, the distance between the pins at rest is 10cm and when stretched is 14cm). </li>
+                                <li>Enter your fabric length at rest and your fabric length when stretched to calculate negative ease required.</li>
+                                <li>If you have the technical sheet for your fabric, you will use the greatest stretch percentage as the average for the fabric. </li>
+                                </ol>
+                                 </p> &nbsp;
+                                
+                                <p id="p1"><u><b>Determining the Stretch Ratio for a Weft Knit</b></p></u> &nbsp;
+                                
+                                <p id="p0">
+                                <ol>
+                                
+                                
+                                <li>Locate the grainline (warp) of your fabric. The grain runs parallel to the selvedge of your fabric. </li>
+                                <li>Locate the crosswise grain (weft) of your fabric. The crosswise grain runs perpendicular to the selvedge of your fabric. </li>
+                                <li>Measure 20cm perpendicular to the selvidge of your fabric, along the crossgrain. </li>
+                                <li>Measure 5cm parallel to the selvedge of your fabric, along the grain.</li>
+                                <li>Cut out the 20cm x 5cm rectangular strip of fabric according to steps 3 and 4. </li>
+                                <li>Place your first pin 5cm in along the 20cm side of the rectangle and place your second pin 10cm from the first pin (the distance between both pins should be 10cm). </li>
+                                <li>Place a ruler on your cutting table as a guide when measuring your fabric.</li>
+                                <li>Stretch the fabric comfortably. You want to avoid stretching your fabric to the max, stretch your fabric a comfortable amount for wearability. </li>
+                                <li>Measure the distance between the pins when the fabric is stretched (For example, the distance between the pins at rest is 10cm and when stretched is 14cm). </li>
+                                <li>Enter your fabric length at rest and your fabric length when stretched to calculate negative ease required.</li>
+                                <li>If you have the technical sheet for your fabric, you will use the greatest stretch percentage as the average for the fabric. </li>
+                                
+                                </ol>
+                                 </p> &nbsp;
+                                
+
+                            </div>
+                            <div class="modal-footer">
+                                <h3>&copy; MiSlope Measurements</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  <!-- End Modal  -->
+        </div> 
+    </div>
+
+    
+    <div class="downloadBtn"><a style="display: none;" id="pdf">Download Sloper</a></div>
+    <div id="button-container" class="section-container">
+        <input type="submit" value="Submit Measurements" />
+        
+        
+
+        </div>
+   
+  </form>
    
