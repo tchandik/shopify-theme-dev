@@ -17,7 +17,7 @@
       };
 
 
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0573/4111/6468/t/5/assets/appstle-subscription.js?v=1650567481");
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0573/4111/6468/t/5/assets/appstle-subscription.js?v=1656345722");
 
       window.RS = Window.RS || {};
       RS.Config = {
@@ -85,6 +85,11 @@
         "scriptLoadDelay": "0",
         "formatMoneyOverride": "false",
         "appstle_app_proxy_path_prefix": "apps\/subscriptions",
+        "updatePriceOnQuantityChange": "",
+        "widgetParentSelector": "",
+        "quantitySelector": "",
+        "enableAddJSInterceptor": "false",
+        "reBuyEnabled": "false",
         "css": {
             "appstle_subscription_widget": {
                 "margin-top": "" ,
