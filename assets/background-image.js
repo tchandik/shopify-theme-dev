@@ -18,7 +18,8 @@ function randomIndex(arrLength) {
 function loadBackground(image) {
 
 ///images/image-1.jpg
-document.body.style.backgroundImage = `url(https://cdn.shopify.com/s/files/1/0573/4111/6468/files/${image}.png)`
+document.body.style.backgroundImage = `url(https://cdn.shopify.com/s/files/1/0573/4111/6468/files/${image}.png)`; 
+document.body.style.backgroundSize = "cover";
 
 }
 
