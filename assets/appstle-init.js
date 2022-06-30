@@ -17,7 +17,7 @@
       };
 
 
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0573/4111/6468/t/5/assets/appstle-subscription.js?v=1656345722");
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0573/4111/6468/t/5/assets/appstle-subscription.js?v=1656575175");
 
       window.RS = Window.RS || {};
       RS.Config = {
@@ -79,6 +79,7 @@
         "widgetEnabledOnSoldVariant": "false",
         "switchRadioButtonWidget": false,
         "appstlePlanName": "FREE",
+        "appstlePlanFeatures": {"subscriptionCount":50,"analytics":true,"enableSubscriptionManagement":false,"enableDunningManagement":false,"enableCustomerPortalSettings":false,"enableShippingProfiles":false,"enableProductSwapAutomation":false,"enableAdvancedSellingPlans":false,"enableSummaryReports":false,"enableCustomEmailDomain":false,"enableWidgetPlacement":false,"enableIntegrations":false,"enableSmsAlert":false,"enableCustomEmailHtml":false,"enableCancellationManagement":false,"enableBundling":false,"enableAutomation":false,"enableQuickActions":false,"enableExternalApi":false,"enableCartWidget":false,"enableAutoSync":false},
         "formMappingAttributeName": "",
         "formMappingAttributeSelector": "",
         "quickViewModalPollingSelector": "",
