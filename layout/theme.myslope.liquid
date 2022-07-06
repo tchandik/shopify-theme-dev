@@ -80,63 +80,118 @@
       </head>
     
       <body>
-{% comment %} This is where you add the subscriber tags {% endcomment %}
-{% if customer.tags contains 'appstle_subscription_active_customer' %}
-
-        {% section 'header-myslope' %}
-        <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-          {{ content_for_layout }}
-        </main>
-        {% section 'footer-myslope' %}
-    
-        <ul hidden>
-          <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
-        </ul>
-    
-        <script>
-          window.shopUrl = '{{ request.origin }}';
-          window.routes = {
-            cart_add_url: '{{ routes.cart_add_url }}',
-            cart_change_url: '{{ routes.cart_change_url }}',
-            cart_update_url: '{{ routes.cart_update_url }}',
-            predictive_search_url: '{{ routes.predictive_search_url }}'
-          };
-    
-          window.cartStrings = {
-            error: `{{ 'sections.cart.cart_error' | t }}`,
-            quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
-          }
-    
-          window.variantStrings = {
-            addToCart: `{{ 'products.product.add_to_cart' | t }}`,
-            soldOut: `{{ 'products.product.sold_out' | t }}`,
-            unavailable: `{{ 'products.product.unavailable' | t }}`,
-          }
-    
-          window.accessibilityStrings = {
-            imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
-            shareSuccess: `{{ 'general.share.success_message' | t }}`,
-            pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
-            playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-          }
-        </script>
-    
-        {%- if settings.predictive_search_enabled -%}
-          <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-        {%- endif -%} 
-
-
- 
-  {% else %}
+{% comment %} OrderDate is the date the order was created, minused from current date {% endcomment %}
+        {% assign orderDate =  'created_at.order' | date: '%B %d, %Y' %}
+        {% assign currentDate =  'now' | date: '%B %d, %Y' %}
+        {% assign difference = currentDate | minus: orderDate %}
   
-
-{% section 'header-membership' %}
-<div id='membership-content'>{{ pages.no-membership.content }}</div>
-
-{% section 'footer-membership' %}
-{% endif %}
-
-      </body>
-    {% endif %}
-    </html>
-    
+    {% comment %} If the customer is active then the code will run {% endcomment %}
+        
+        {% if customer.tags contains 'appstle_subscription_active_customer' %}
+                
+                {% section 'header-myslope' %}
+                <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+                  {{ content_for_layout }}
+                </main>
+                {% section 'footer-myslope' %}
+            
+                <ul hidden>
+                  <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+                </ul>
+            
+                <script>
+                  window.shopUrl = '{{ request.origin }}';
+                  window.routes = {
+                    cart_add_url: '{{ routes.cart_add_url }}',
+                    cart_change_url: '{{ routes.cart_change_url }}',
+                    cart_update_url: '{{ routes.cart_update_url }}',
+                    predictive_search_url: '{{ routes.predictive_search_url }}'
+                  };
+            
+                  window.cartStrings = {
+                    error: `{{ 'sections.cart.cart_error' | t }}`,
+                    quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+                  }
+            
+                  window.variantStrings = {
+                    addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+                    soldOut: `{{ 'products.product.sold_out' | t }}`,
+                    unavailable: `{{ 'products.product.unavailable' | t }}`,
+                  }
+            
+                  window.accessibilityStrings = {
+                    imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
+                    shareSuccess: `{{ 'general.share.success_message' | t }}`,
+                    pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
+                    playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
+                  }
+                </script>
+            
+                {%- if settings.predictive_search_enabled -%}
+                  <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+                {%- endif -%} 
+        
+        {% comment %} Else, if the customer has cancelled their subscription with days left, their account will be active until the end {% endcomment %}
+        {% comment %} Note we have to put a different elseif statement for total spend and days difference to mark the different sub packages{% endcomment %}
+        {% comment %} For the paused customers, total spend is the amount of each subscription package, that will correspond to days -  so 1-month will be $9.99 and 31 days, 6-months will be $50.68 and 120 days, 12-months will be $56 and 365 days - and total days of their subscription denoted by variable difference {% endcomment %}
+        {% elsif customer.tags contains 'appstle_subscription_pause_customer' and customer.total_spent == 0 and difference > 10 %}
+        
+        
+                
+                {% section 'header-myslope' %}
+                <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+                  {{ content_for_layout }}
+                </main>
+                {% section 'footer-myslope' %}
+            
+                <ul hidden>
+                  <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+                </ul>
+            
+                <script>
+                  window.shopUrl = '{{ request.origin }}';
+                  window.routes = {
+                    cart_add_url: '{{ routes.cart_add_url }}',
+                    cart_change_url: '{{ routes.cart_change_url }}',
+                    cart_update_url: '{{ routes.cart_update_url }}',
+                    predictive_search_url: '{{ routes.predictive_search_url }}'
+                  };
+            
+                  window.cartStrings = {
+                    error: `{{ 'sections.cart.cart_error' | t }}`,
+                    quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+                  }
+            
+                  window.variantStrings = {
+                    addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+                    soldOut: `{{ 'products.product.sold_out' | t }}`,
+                    unavailable: `{{ 'products.product.unavailable' | t }}`,
+                  }
+            
+                  window.accessibilityStrings = {
+                    imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
+                    shareSuccess: `{{ 'general.share.success_message' | t }}`,
+                    pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
+                    playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
+                  }
+                </script>
+            
+                {%- if settings.predictive_search_enabled -%}
+                  <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+                {%- endif -%} 
+        
+        
+         
+          {% else %}
+          
+        
+        {% section 'header-membership' %}
+        <div id='membership-content'>{{ pages.no-membership.content }}</div>
+        
+        {% section 'footer-membership' %}
+        {% endif %}
+        
+              </body>
+            {% endif %}
+            </html>
+            
