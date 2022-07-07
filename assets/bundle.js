@@ -1957,13 +1957,13 @@
       // get a blob you can do whatever you like with
       let allEl = form.elements;
       let impMetric = form.elements.units; 
-      
+  
       blob = stream.toBlob("application/pdf");
       
       
       const url = stream.toBlobURL('application/pdf');
       const element = document.getElementById('pdf');
-      element.setAttribute('href', url);
+      // element.setAttribute('href', url);
   
   // -------------------------------------------------------------------------------------------------------------------------------------
   //  PREVENT FORM FROM SUBMITTING
